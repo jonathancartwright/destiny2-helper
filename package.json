@@ -1,0 +1,40 @@
+{
+  "name": "destiny2-vault-curator",
+  "version": "0.1.0",
+  "description": "MCP server for intelligent Destiny 2 vault management with DIM build protection",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "destiny2-vault-curator": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "destiny2",
+    "bungie",
+    "dim",
+    "mcp",
+    "vault",
+    "inventory"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "bungie-api-ts": "^5.0.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "eslint": "^8.55.0",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
